@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 8410143567710292399}
   - component: {fileID: 8410143567710292392}
   - component: {fileID: 8410143567710292393}
+  - component: {fileID: 7923627748809306684}
   m_Layer: 0
   m_Name: Obstacle
-  m_TagString: Friendly
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 8410143567710292394}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 15.9, y: 7.5, z: 0}
-  m_LocalScale: {x: 11.0592, y: 11.755765, z: 3.308}
+  m_LocalScale: {x: 7.963286, y: 8.056447, z: 3.308}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -58,7 +59,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ed503e9935fda5b44ae268fb5331742e, type: 2}
+  - {fileID: 2100000, guid: 4e5d79cdf48f4134fae4a9e5a517d484, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -91,3 +92,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7923627748809306684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8410143567710292394}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33d883490753d4f49a10217b20b18226, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementVector: {x: 10, y: 10, z: 10}
+  period: 2
+  movementFactor: 0
